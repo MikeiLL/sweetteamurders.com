@@ -1,5 +1,5 @@
 "@development":
-  ssh: "michaelearlsimmons.test"
+  ssh: "sweetteamurders.test"
   path: "/srv/www/sweetteamurders.com/current/web/wp"
 "@production":
   ssh: "web@your_server_hostname:22"

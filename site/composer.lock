@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "914046c7191bd418e8cb640cb3e62631",
+    "content-hash": "390ea00e0dc0ac522345a469bd47b0ec",
     "packages": [
         {
             "name": "composer/installers",
@@ -1071,6 +1071,37 @@
                 "source": "https://plugins.svn.wordpress.org/akismet"
             },
             "time": "2026-05-01T00:26:06+00:00"
+        },
+        {
+            "name": "wp-plugin/astra-import-export",
+            "version": "1.1.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/astra-import-export/",
+                "reference": "tags/1.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/astra-import-export.1.1.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0|~2.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://wp-packages.org/downloads",
+            "authors": [
+                {
+                    "name": "Brainstorm Force"
+                }
+            ],
+            "description": "Astra theme customizer offers several settings for header/footer layout, sidebar and blog designs, colors, backgrounds, typography and much more.",
+            "homepage": "https://wpastra.com/",
+            "support": {
+                "changelog": "https://wordpress.org/plugins/astra-import-export/#developers",
+                "issues": "https://wordpress.org/support/plugin/astra-import-export",
+                "source": "https://plugins.svn.wordpress.org/astra-import-export"
+            },
+            "time": "2026-03-23T19:23:21+00:00"
         },
         {
             "name": "wp-plugin/event-tickets",
