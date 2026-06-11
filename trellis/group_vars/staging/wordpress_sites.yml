@@ -9,7 +9,7 @@ wordpress_sites:
       - www.sweetteamurders.com
     local_path: ../site
     branch: main
-    repo: git@github.com:example/example.com.git
+    repo: git@github.com:mikeill/sweetteamurders.git
     repo_subtree_path: site
     multisite:
       enabled: false
