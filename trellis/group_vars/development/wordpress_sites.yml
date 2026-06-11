@@ -4,11 +4,11 @@
 wordpress_sites:
   sweetteamurders.com:
     site_hosts:
-    - canonical: michaelearlsimmons.test
+    - canonical: sweetteamurders.test
       redirects:
-      - www.michaelearlsimmons.test
+      - www.sweetteamurders.test
     local_path: ../site
-    admin_email: admin@michaelearlsimmons.test
+    admin_email: admin@sweetteamurders.test
     multisite:
       enabled: false
     ssl:
