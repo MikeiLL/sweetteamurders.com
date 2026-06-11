@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fec29eb020a391ca4876d5fff06387cf",
+    "content-hash": "914046c7191bd418e8cb640cb3e62631",
     "packages": [
         {
             "name": "composer/installers",
@@ -1256,6 +1256,32 @@
                 "source": "https://plugins.svn.wordpress.org/ultimate-addons-for-gutenberg"
             },
             "time": "2026-05-27T08:00:57+00:00"
+        },
+        {
+            "name": "wp-theme/astra",
+            "version": "4.13.4",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/astra/",
+                "reference": "4.13.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/astra.4.13.4.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0|~2.0"
+            },
+            "type": "wordpress-theme",
+            "notification-url": "https://wp-packages.org/downloads",
+            "description": "The Astra WordPress theme is lightning-fast and highly customizable. It has over 1 million downloads and the only theme in the world with 6,000+ five-star reviews! It’s ideal for professional web designers, solopreneurs, small businesses, eCommerce, membership sites and any type of website. It offers special features and templates so it works perfectly with all page builders like Spectra, Elementor, Beaver Builder, etc. Fast performance, clean code, mobile-first design and schema markup are all built-in, making the theme exceptionally SEO-friendly. It’s fully compatible with WooCommerce, SureCart and other eCommerce plugins and comes with lots of store-friendly features and templates. Astra also provides expert support for free users. A dedicated team of fully trained WordPress experts are on hand to help with every aspect of the theme. Try the live demo of Astra: https://zipwp.org/themes/astra/",
+            "homepage": "https://wordpress.org/themes/astra/",
+            "support": {
+                "changelog": "https://wordpress.org/themes/astra/#developers",
+                "issues": "https://wordpress.org/support/theme/astra",
+                "source": "https://themes.svn.wordpress.org/astra"
+            },
+            "time": "2026-06-02T11:01:34+00:00"
         },
         {
             "name": "wp-theme/twentytwentyfive",
