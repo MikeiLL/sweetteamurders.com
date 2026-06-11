@@ -5,13 +5,13 @@
 # Copyright (c) Ben Word
 
 DEVDIR="web/app/uploads/"
-DEVSITE="https://baughmanproperties.test"
+DEVSITE="https://sweetteamurders.test"
 
-PRODDIR="web@baughmanproperties.com:/srv/www/baughmanproperties.com/shared/uploads/"
-PRODSITE="https://baughmanproperties.com"
+PRODDIR="web@sweetteamurders.com:/srv/www/sweetteamurders.com/shared/uploads/"
+PRODSITE="https://sweetteamurders.com"
 
-STAGDIR="web@staging.baughmanproperties.com:/srv/www/baughmanproperties.com/shared/uploads/"
-STAGSITE="http://staging.baughmanproperties.com"
+STAGDIR="web@staging.sweetteamurders.com:/srv/www/sweetteamurders.com/shared/uploads/"
+STAGSITE="http://staging.sweetteamurders.com"
 
 LOCAL=false
 SKIP_DB=false
