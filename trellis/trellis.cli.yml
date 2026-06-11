@@ -4,3 +4,16 @@
 # database_app: sequel-ace
 # open:
 #   admin: "https://mysite.com/wp/wp-admin"
+ask_vault_pass: false
+check_for_updates: true
+load_plugins: true
+database_app: sequel-ace
+open:
+  site: "https://sweetteamurders.com"
+  admin: "https://sweetteamurders.com/wp/wp-admin"
+server:
+  provider: digitalocean
+virtualenv_integration: true
+vm:
+  manager: auto
+  ubuntu: 24.04
