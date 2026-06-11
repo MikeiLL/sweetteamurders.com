@@ -1,0 +1,9 @@
+"@development":
+  ssh: "michaelearlsimmons.test"
+  path: "/srv/www/sweetteamurders.com/current/web/wp"
+"@production":
+  ssh: "web@your_server_hostname:22"
+  path: "/srv/www/sweetteamurders.com/current/web/wp"
+"@staging":
+  ssh: "web@your_server_hostname:22"
+  path: "/srv/www/sweetteamurders.com/current/web/wp"
