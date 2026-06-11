@@ -7,7 +7,7 @@ vault_users:
   password: f9KYm3535kBkdFMn3GHtTg2DMntBh1divNXPCAqcs158mohsIgWoqKXJBirVM5re
   salt: k6nin4AzEKzixkGmG4REsqzbqwkLMhnH2Fnrm1kdc2ffalvLmiHj6qcfkt1EchnP
 vault_wordpress_sites:
-  michaelearlsimmons.com:
+  sweetteamurders.com:
     admin_password: FJUC0kX7vsdGqwtqYTfeuEChj23bvJjrN4ckwjha3Zx211WdFHdqomx1PqfUlUjE
     env:
       db_password: Q6yaOXg8DF3eroT6poVO7cf1Kb6dqXpTLdAhM1znipwTbz4Ri4LTjfx0pVuAE7HS

@@ -2,11 +2,11 @@
 # Documentation: https://roots.io/trellis/docs/wordpress-sites/
 
 wordpress_sites:
-  michaelearlsimmons.com:
+  sweetteamurders.com:
     site_hosts:
-    - canonical: michaelearlsimmons.com
+    - canonical: sweetteamurders.com
       redirects:
-      - www.michaelearlsimmons.com
+      - www.sweetteamurders.com
     local_path: ../site
     branch: main
     repo: git@github.com:example/example.com.git

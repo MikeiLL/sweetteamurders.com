@@ -3,7 +3,7 @@
 
 vault_mysql_root_password: i3HkaGiM9GW1eTVmM9XEWUoNNgyFqNTNGsR4vkKh7sFJyEmxjuiYGqow82UqZZIr
 vault_wordpress_sites:
-  michaelearlsimmons.com:
+  sweetteamurders.com:
     admin_password: 80rcPazeGSfInYUbd19a4YgjevblXIEAlXwagPH8XsMpBtOrC21DmsamsjXbGrgo
     env:
       db_password: dZblvLaZJO1TPTqJIb5e1kLkmyyHoZw8oQl3mriV3rBUOBpKvTjiRgEM8h6ERRHV

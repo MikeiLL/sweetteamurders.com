@@ -2,7 +2,7 @@
 # Documentation: https://roots.io/trellis/docs/wordpress-sites/
 
 wordpress_sites:
-  michaelearlsimmons.com:
+  sweetteamurders.com:
     site_hosts:
     - canonical: michaelearlsimmons.test
       redirects:
