@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "390ea00e0dc0ac522345a469bd47b0ec",
+    "content-hash": "1eefe4ca0e7faa2ae5aea71e7a9d161c",
     "packages": [
         {
             "name": "composer/installers",
@@ -1164,6 +1164,37 @@
                 "source": "https://plugins.svn.wordpress.org/jetpack"
             },
             "time": "2026-06-10T08:16:10+00:00"
+        },
+        {
+            "name": "wp-plugin/jetpack-videopress",
+            "version": "3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/jetpack-videopress/",
+                "reference": "tags/3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack-videopress.3.1.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0|~2.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://wp-packages.org/downloads",
+            "authors": [
+                {
+                    "name": "Automattic"
+                }
+            ],
+            "description": "The finest video hosting for WordPress. Drag and drop videos through the WordPress editor and keep the focus on your content, not the ads.",
+            "homepage": "https://wordpress.org/plugins/jetpack-videopress",
+            "support": {
+                "changelog": "https://wordpress.org/plugins/jetpack-videopress/#developers",
+                "issues": "https://wordpress.org/support/plugin/jetpack-videopress",
+                "source": "https://plugins.svn.wordpress.org/jetpack-videopress"
+            },
+            "time": "2026-05-14T16:11:09+00:00"
         },
         {
             "name": "wp-plugin/mailchimp",

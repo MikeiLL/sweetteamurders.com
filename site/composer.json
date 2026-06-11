@@ -43,6 +43,7 @@
     "wp-plugin/astra-import-export": "^1.1",
     "wp-plugin/event-tickets": "^5.28",
     "wp-plugin/jetpack": "^15.9",
+    "wp-plugin/jetpack-videopress": "^3.1",
     "wp-plugin/mailchimp": "^2.1",
     "wp-plugin/mailpoet": "^5.29",
     "wp-plugin/the-events-calendar": "^6.16",
