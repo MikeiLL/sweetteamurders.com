@@ -39,6 +39,13 @@
     "roots/wordpress": "7.0",
     "roots/wp-config": "^1.0",
     "vlucas/phpdotenv": "^5.0",
+    "wp-plugin/akismet": "^5.7",
+    "wp-plugin/event-tickets": "^5.28",
+    "wp-plugin/jetpack": "^15.9",
+    "wp-plugin/mailchimp": "^2.1",
+    "wp-plugin/mailpoet": "^5.29",
+    "wp-plugin/the-events-calendar": "^6.16",
+    "wp-plugin/ultimate-addons-for-gutenberg": "^2.19",
     "wp-theme/twentytwentyfive": "^1.0"
   },
   "require-dev": {
