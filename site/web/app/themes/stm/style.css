@@ -5,6 +5,7 @@
  */
 
 .site-title,
-.site-description {
+.site-description,
+.ast-site-title-wrap {
   display: none;
 }
