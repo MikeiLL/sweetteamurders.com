@@ -1,0 +1,10 @@
+/**
+ * Theme Name: Sweet Tea Murders
+ * Template: astra
+ * Author: Mike Kilmer
+ */
+
+.site-title,
+.site-description {
+  display: none;
+}
