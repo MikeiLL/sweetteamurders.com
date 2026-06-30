@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1eefe4ca0e7faa2ae5aea71e7a9d161c",
+    "content-hash": "73ff5e732af66f323a6cfc1f213c82ee",
     "packages": [
         {
             "name": "composer/installers",
@@ -1226,6 +1226,37 @@
                 "source": "https://plugins.svn.wordpress.org/mailchimp"
             },
             "time": "2026-06-03T16:25:53+00:00"
+        },
+        {
+            "name": "wp-plugin/mailin",
+            "version": "3.3.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/mailin/",
+                "reference": "tags/3.3.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/mailin.3.3.5.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0|~2.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://wp-packages.org/downloads",
+            "authors": [
+                {
+                    "name": "Brevo"
+                }
+            ],
+            "description": "Turn your WordPress site into a marketing powerhouse. Grow your audience, boost engagement, and drive more sales with Brevo.",
+            "homepage": "https://www.brevo.com/?r=wporg",
+            "support": {
+                "changelog": "https://wordpress.org/plugins/mailin/#developers",
+                "issues": "https://wordpress.org/support/plugin/mailin",
+                "source": "https://plugins.svn.wordpress.org/mailin"
+            },
+            "time": "2026-06-24T07:01:13+00:00"
         },
         {
             "name": "wp-plugin/mailpoet",

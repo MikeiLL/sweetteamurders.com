@@ -84,7 +84,7 @@ function verify_recaptcha_comment($commentdata) {
   $result = json_decode($response_body);
 
   // Check if verification succeeded and score is ≥ 0.5 (adjust as needed)
-  if (!$result->success || $result->score < 0.1) {
+  if (!$result->success || $result->score < 0.4) {
       wp_die(__('reCAPTCHA verification failed. You may be a bot (or worse).'));
   }
 
