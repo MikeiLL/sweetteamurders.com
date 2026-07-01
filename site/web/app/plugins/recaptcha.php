@@ -16,14 +16,17 @@ Description: Add ReCaptcha to comments
 // Enqueue reCAPTCHA script
 function enqueue_recaptcha_script() {
   // Only load on single posts/pages (where comments are displayed)
+  // Cloudflare site key:
   if (is_singular() && comments_open()) {
       wp_enqueue_script(
-          'recaptcha',
-          'https://www.google.com/recaptcha/api.js?render=6Let8zYtAAAAAJAS-48uW2ZpU6lvh8HeSQ-oTVyH', // Replace with your Site Key
-          array(),
-          '3.0',
-          false // Load in footer
-      );
+		'cloudflare-turnstile',
+		'https://challenges.cloudflare.com/turnstile/v0/api.js',
+		array(),
+		null,
+    array(
+      'strategy' => 'async', //Place in footer
+    )
+	);
   }
 }
 add_action('wp_enqueue_scripts', 'enqueue_recaptcha_script');
@@ -35,16 +38,17 @@ function add_recaptcha_to_comment_form() {
   if (is_singular() && comments_open()) {
       ?>
       <!-- Hidden input to store reCAPTCHA token -->
-      <input type="hidden" id="recaptcha_response" name="recaptcha_response">
-
+      <div data-sitekey='0x4AAAAAADtij7u4De7RK9xI'
+        class="cf-turnstile"
+        name="recaptcha_response"
+        data-callback="turnstileSuccess"
+        id="recaptcha_response"></div>
       <!-- JavaScript to get token and populate hidden input -->
-      <script>
-          grecaptcha.ready(function() {
-              grecaptcha.execute('6Let8zYtAAAAAJAS-48uW2ZpU6lvh8HeSQ-oTVyH', {action: 'comment'}).then(function(token) {
-                  document.getElementById('recaptcha_response').value = token;
-              });
-          });
-      </script>
+       <script>
+        function turnstileSuccess(token){
+          turnstile.reset();
+        }
+        </script>
       <?php
   }
 }
@@ -56,24 +60,23 @@ function add_recaptcha_to_comment_form() {
 // Verify reCAPTCHA response before saving comment
 function verify_recaptcha_comment($commentdata) {
   // Check if reCAPTCHA token exists
-  if (!isset($_POST['recaptcha_response'])) {
+  if (!isset($_POST['cf-turnstile-response'])) {
       wp_die(__('reCAPTCHA verification failed. Please try again.'));
   }
 
-  $token = $_POST['recaptcha_response'];
+  $token = $_POST['cf-turnstile-response'];
   $remote_ip = $_SERVER['REMOTE_ADDR'];
 
-  // Send request to Google's verification API
-  $url = 'https://www.google.com/recaptcha/api/siteverify';
+  // Send request to Cloudflare's verification API
+  $url = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
   $args = array(
       'body' => array(
-          'secret' => RECAPTCHA_SECRET_KEY,
+          'secret' => CF_TURNSTILE_SECRET_KEY,
           'response' => $token,
           'remoteip' => $remote_ip
       ),
       'timeout' => 10
   );
-
   $response = wp_remote_post($url, $args);
   // Check for API errors
   if (is_wp_error($response)) {
@@ -84,8 +87,8 @@ function verify_recaptcha_comment($commentdata) {
   $result = json_decode($response_body);
 
   // Check if verification succeeded and score is ≥ 0.5 (adjust as needed)
-  if (!$result->success || $result->score < 0.4) {
-      wp_die(__('reCAPTCHA verification failed. You may be a bot (or worse).'));
+  if (!$result->success) {
+      wp_die(__('reCAPTCHA verification failed. You may be a bot. If not, please go back and make sure you checked the I am not a robot checkbox. Thank you.'));
   }
 
   return $commentdata; // Allow comment to post
