@@ -43,12 +43,6 @@ function add_recaptcha_to_comment_form() {
         name="recaptcha_response"
         data-callback="turnstileSuccess"
         id="recaptcha_response"></div>
-      <!-- JavaScript to get token and populate hidden input -->
-       <script>
-        function turnstileSuccess(token){
-          turnstile.reset();
-        }
-        </script>
       <?php
   }
 }
